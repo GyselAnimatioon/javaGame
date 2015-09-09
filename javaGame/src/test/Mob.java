@@ -10,6 +10,7 @@ public class Mob {
     public Mob() {
         
         
+        
         generateDefaultMob();
     }
 
