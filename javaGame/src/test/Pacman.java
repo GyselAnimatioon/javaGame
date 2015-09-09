@@ -13,7 +13,12 @@ package test;
 public class Pacman implements IntMob {
 
     private int life = 100;
-    
+        
+    /**
+     * Hier müssen die neuen Funktionen eingefügt werden und
+     * @Override sollte nicht vergesen werden.
+     * Auch kommen hier noch die neuen Funktionen hinein.
+     */
     
     @Override
     public void getDamage() {

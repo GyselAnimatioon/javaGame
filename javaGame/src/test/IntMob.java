@@ -11,6 +11,15 @@ package test;
  */
 public interface IntMob {
     
+       /**
+     * Aufgabe auf den 16.09.2015
+     * 
+     * Erweiterung des IntMob Interface, mit je 2 Nützlichen funktionen.
+     * 
+     * 
+     * 
+     */
+    
     public void getDamage();
     
 }
