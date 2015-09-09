@@ -9,7 +9,6 @@ public class Mob {
 
     public Mob() {
         
-        Pacman36.getDamage();
         
         
         generateDefaultMob();
