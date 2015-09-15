@@ -1,6 +1,6 @@
 package test;
 
-public class Bear {
+public class Bear implements IntMob  {
 
     private int leben = 100;
     private int angriff = 10;
@@ -23,5 +23,21 @@ public class Bear {
     public void setLeben(int leben) {
         this.leben = leben;
     }
+    
+    
+    @Override
+    public int getLiveNachDamage(int leben, int schaden) {
+        leben -= schaden;
+        return leben;
+    }
 
-}
+    @Override
+    public int getDamage(int angriff, int angriffsModifier) { 
+       int schaden = angriff * angriffsModifier;
+       return schaden;
+    }
+
+ 
+       
+    }
+

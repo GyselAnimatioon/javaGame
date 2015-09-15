@@ -18,8 +18,12 @@ public interface IntMob {
      * 
      * 
      * 
-     */
+     */ 
+
+     
     
-    public void getDamage();
+    public int getLiveNachDamage(int leben, int schaden);
+    public int getDamage(int angriff, int angriffsModifier);
+    
     
 }

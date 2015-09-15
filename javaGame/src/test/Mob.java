@@ -19,7 +19,7 @@ public class Mob {
         int random = (int) Math.round(Math.random() * 5 + 5);
         for (int i = 0; i < random; i++) {
                 mobs.add(new Pacman());
-            System.out.println("DefaultMob nummer " + (i) + " wird erstellt." );
+            System.out.println("Pacman nummer " + (i) + " wird erstellt." );
             
         }
 

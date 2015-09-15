@@ -20,9 +20,16 @@ public class Pacman implements IntMob {
      * Auch kommen hier noch die neuen Funktionen hinein.
      */
     
+   
+
     @Override
-    public void getDamage() {
-        
+    public int getLiveNachDamage(int leben, int schaden) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int getDamage(int angriff, int angriffsModifier) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
