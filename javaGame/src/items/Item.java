@@ -1,6 +1,6 @@
-package test;
+package items;
 
-class Item {
+public class Item {
 
     private String name = "Default Item Name";
     private String imagePath = "C:/txr/image1.png";
@@ -22,8 +22,6 @@ class Item {
             this.durability = this.durability - 1;
             return true;
         }
-        
-        //Hand hat -1 und wird durch jedes mal 1 kleiner
     }
 
     public String getName() {
