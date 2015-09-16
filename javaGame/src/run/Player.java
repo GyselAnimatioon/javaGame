@@ -17,6 +17,7 @@ public class Player {
     private String name = "Player";
     private int level = 1;
     private int xp = 0;
+    private boolean alive = true;
 
     public Player(Mob mob) {
         this.mob = mob;
@@ -31,6 +32,12 @@ public class Player {
 
     public void attack(Bear bear, int damage) {
         bear.getLiveAfterDamage(damage);
+    }
+    public void suicide(){
+        alive = false;
+    }
+    public boolean getAlive(){
+        return alive;
     }
 
 }

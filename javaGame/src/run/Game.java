@@ -16,7 +16,7 @@ public class Game extends JFrame implements KeyListener {
     }
 
     public void runGame() {
-
+        
         addKeyListener(this);
         setTitle("Bärenstarkes Wunderland of Big Doooom");
         setSize(new Dimension(720, 480));
@@ -27,6 +27,8 @@ public class Game extends JFrame implements KeyListener {
         this.mob.generateMobs();
 
         this.player = new Player(this.mob);
+       
+        
 
     }
 
@@ -37,7 +39,6 @@ public class Game extends JFrame implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent ke) {
-        System.out.println("asd");
         int keyCode = ke.getKeyCode();
         switch (keyCode) {
             case KeyEvent.VK_SPACE:
@@ -46,6 +47,11 @@ public class Game extends JFrame implements KeyListener {
             case KeyEvent.VK_T:
                 player.attack(mob.getBear(0), 1);
                 break;
+            case KeyEvent.VK_S:
+               player.suicide();
+               System.out.println("the player is now " + player.getAlive());
+                break;
+          
         }
     }
 
