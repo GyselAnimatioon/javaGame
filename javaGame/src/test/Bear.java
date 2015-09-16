@@ -7,6 +7,7 @@ public class Bear implements IntMob  {
     private String name = "Bear";
     private int level = 1;
     private int xp = 0;
+    
 
     public Bear(String name) {
         this.name = name;
