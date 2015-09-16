@@ -51,7 +51,9 @@ public class Game extends JFrame implements KeyListener {
                player.suicide();
                System.out.println("the player is now " + player.getAlive());
                 break;
-          
+            case KeyEvent.VK_D:
+                mob.getBear(0).kill();
+                break;
         }
     }
 

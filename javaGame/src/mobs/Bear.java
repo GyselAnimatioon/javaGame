@@ -9,6 +9,7 @@ public class Bear implements IntMob {
     private String name = "Bear";
     private int level = 1;
     private int xp = 0;
+    boolean alive = true;
 
     public Bear(String name) {
         this.name = name;
@@ -26,6 +27,10 @@ public class Bear implements IntMob {
     public int getDamage(int attack, int attackModifier ){
         int damage = attack * attackModifier;
         return damage;
+    }
+    
+    public void kill(){
+        alive = false;
     }
 
 }
